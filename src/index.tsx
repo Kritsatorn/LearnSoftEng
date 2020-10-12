@@ -1,13 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import * as React from 'react';
+import { history } from './config';
+import * as ReactDOM from 'react-dom';
+import { Route, Switch, Router } from 'react-router-dom';
+import { LandingPage } from './pages/LandingPage/LandingPage';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router history={history}>
+    <Switch>
+      <Route exact={true} path="/" component={LandingPage} />
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 
