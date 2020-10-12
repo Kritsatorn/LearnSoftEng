@@ -1,3 +1,5 @@
 export interface LandingPageTypes {
-  text: string
+  text: string,
+  lat: number,
+  month: number
 }
