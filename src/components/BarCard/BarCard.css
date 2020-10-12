@@ -1,0 +1,42 @@
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* max-width: 312px;
+    max-height: 100px; */
+    height: 164px;
+    width: 324px;
+    border-radius: 0px;
+    box-shadow: 0 2.5px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: teal;
+    margin: 16px;
+    padding: 0;
+}
+
+.box1st {
+    width: 100%;
+    height: 124px;
+    background-color: rgba(0, 83, 101, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2nd {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(97, 233, 241, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textInBox1st {
+    color: white;
+    font-size: 48px;
+}
+
+.textInBox2nd {
+    color: black;
+    font-size: 18px;
+}
