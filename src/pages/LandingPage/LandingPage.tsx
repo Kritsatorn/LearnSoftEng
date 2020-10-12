@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { LandingPageTypes } from './LandingPageTypes'
+import { BarCard } from '../../components/BarCard/BarCard';
 export class LandingPage
   extends React.Component<object, LandingPageTypes> {
   constructor(props: object) {
@@ -13,7 +14,9 @@ export class LandingPage
   render() {
     return (
       <div>
-        {this.state.text}
+        <BarCard
+          cardName={this.state.text}
+        />
       </div>
     )
   }
