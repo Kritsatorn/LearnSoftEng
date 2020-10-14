@@ -4,8 +4,7 @@ import * as ReactDOM from 'react-dom';
 import { Route, Switch, Router } from 'react-router-dom';
 import { LandingPage } from './pages/LandingPage/LandingPage';
 import * as serviceWorker from './serviceWorker';
-import "materialize-css/dist/css/materialize.min.css";
-import "materialize-css/dist/js/materialize.min.js";
+
 
 ReactDOM.render(
   <Router history={history}>

@@ -2,6 +2,9 @@ import * as React from 'react';
 import { LandingPageTypes } from './LandingPageTypes';
 import { SeasonDisplay } from '../../components/SeasonDisplay/SeasonDisplay';
 import { BarCard } from '../../components/BarCard/BarCard';
+import *  as NavBar from '../../components/NavBarLandingPage/NavBarLandingPage';
+import './LandingPage.css'
+// import { Button, FormControl, Navbar, Nav, Form } from 'react-bootstrap';
 export class LandingPage
   extends React.Component<object, LandingPageTypes> {
   constructor(props: object) {
@@ -26,7 +29,8 @@ export class LandingPage
   render() {
 
     return (
-      <div>
+      <div >
+        <NavBar.NavBarLandingPage />
         <BarCard
           cardName={this.state.text}
         />
