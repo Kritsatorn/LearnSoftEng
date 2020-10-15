@@ -3,6 +3,7 @@ import { LandingPageTypes } from './LandingPageTypes';
 import { SeasonDisplay } from '../../components/SeasonDisplay/SeasonDisplay';
 import { BarCard } from '../../components/BarCard/BarCard';
 import *  as NavBar from '../../components/NavBarLandingPage/NavBarLandingPage';
+import SidebarExampleDimmed from '../../components/NavBarLandingPage/SideBar';
 import './LandingPage.css'
 // import { Button, FormControl, Navbar, Nav, Form } from 'react-bootstrap';
 export class LandingPage
@@ -30,6 +31,7 @@ export class LandingPage
 
     return (
       <div >
+        <SidebarExampleDimmed />
         <NavBar.NavBarLandingPage />
         <BarCard
           cardName={this.state.text}
@@ -39,6 +41,9 @@ export class LandingPage
           lat={this.state.lat}
           month={this.state.month}
         />
+        <button className="ui button">
+          Follow
+</button>
       </div>
     );
   }

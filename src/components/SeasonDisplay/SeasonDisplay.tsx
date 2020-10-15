@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card, Button } from "react-materialize";
+import { Card, Button } from "semantic-ui-react";
 
 import { SeasonDisplayProps } from './SeasonDisplayTypes'
 export class SeasonDisplay
